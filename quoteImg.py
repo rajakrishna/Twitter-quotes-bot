@@ -8,7 +8,7 @@ def quoteImg():
   i  = random.randint(0,len(lines)-1)
 
   #variables for image size
-  x1 = 1024
+  x1 = 1024 
   y1 = 512
   #my quote
   sentence = lines[i]
