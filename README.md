@@ -32,5 +32,5 @@ quoteImg.py
 
 Example `fill=(255,255,255)`
 
-## Quote.png
+## Result (Quote.png)
 ![Image_with_quote](/images/quote.png)
