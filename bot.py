@@ -7,8 +7,9 @@ import quoteImg
 
 
 # Authenticate to Twitter
-auth = tweepy.OAuthHandler("fcQ5eOoOaOt0tlbcl75IIjPcO", "F4RQRQwOEnho0jEd3twlMoaXZRMYuNTMZCcMiDLe0kDFCGX4iS")
-auth.set_access_token("1452342498-zQwz1agN6senzofP39s9Pf5aTflpVyGHs18EMBP", "E5yMy1NTSZdWFBXVglpdx8cSPJiHO658cxYIKOfzPO9yE")
+
+auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+auth.set_access_token(access_token, access_token_secret)
 
 # Create API object
 api = tweepy.API(auth)
