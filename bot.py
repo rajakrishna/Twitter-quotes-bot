@@ -2,7 +2,8 @@ import tweepy
 import os
 import glob
 from PIL import Image
-import threading
+import quoteImg
+
 
 
 # Authenticate to Twitter
@@ -12,22 +13,17 @@ auth.set_access_token("1452342498-zQwz1agN6senzofP39s9Pf5aTflpVyGHs18EMBP", "E5y
 # Create API object
 api = tweepy.API(auth)
 
-# Create a tweet
+# Twitter Status
 # api.update_status("Hello World")
 
-images = glob.glob("images/*.png")
-
-
-for image in images:
-    imagePath = image
-    # status = "Check out our new website"
-    # api.update_with_media(imagePath, status)
-    api.update_with_media(imagePath)
+# Twitter Image
+def bot():
+    api.update_with_media('./images/quote.png')
     print("sucess")
 
 
-
-
+quoteImg.quoteImg()
+bot()
 
 
 
