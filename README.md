@@ -42,5 +42,5 @@ The quotes are found in quotes/data.txt
 
 Image background is created in quoteImg.py using Pillow 
 
-## Result (Quote.png)
+## Result (Quote.png) 1024x512
 ![Image_with_quote](/images/quote.png)
