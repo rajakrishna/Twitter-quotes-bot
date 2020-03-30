@@ -14,5 +14,20 @@ auth.set_access_token(access_token, access_token_secret)
 
 Run bot.py
 
+## Locations
+The quotes are found in quotes/data.txt
+Image background is created in quoteImg.py using Pillow 
+
+## Change the background color
+quoteImg.py
+`img = Image.new('RGB', (x1, y1), color = (RGB Code))`
+
+Example `color=(255,255,255)`
+## Change the text color
+quoteImg.py
+`d.text((qx,qy), fresh_sentence ,align="center",  font=fnt, fill=(RGB Code))`
+
+Example `fill=(255,255,255)`
+
 ## Quote.png
 ![Image_with_quote](/images/quote.png)
