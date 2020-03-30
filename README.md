@@ -14,6 +14,13 @@ auth.set_access_token(access_token, access_token_secret)
 
 Run bot.py
 
+## Change the size
+quoteImg.py
+x1 = width
+y1 = height
+
+Exmaple `x1=1024 y1=512`
+
 ## Change the background color
 quoteImg.py
 
