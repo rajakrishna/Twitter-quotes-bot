@@ -5,7 +5,6 @@ import random
 def quoteImg():
   file = open("./quotes/data.txt","r")
   lines = file.readlines() 
-
   i  = random.randint(0,len(lines)-1)
 
   #variables for image size
@@ -15,6 +14,7 @@ def quoteImg():
   sentence = lines[i]
   #choose a font
   fnt = ImageFont.truetype('./font/Abel.ttf', 40)
+  # color is the backgroundColor of the Image
   img = Image.new('RGB', (x1, y1), color = (0,0,0))
   d = ImageDraw.Draw(img)
   #find the average size of the letter
@@ -45,6 +45,7 @@ def quoteImg():
   y2 = dim[1]
   qx = (x1/2 - x2/2)
   qy = (y1/2-y2/2)
+  # fill is the text color
   d.text((qx,qy), fresh_sentence ,align="center",  font=fnt, fill=(255, 255, 255))
   img.save('images/quote.png')
   
