@@ -1,6 +1,6 @@
 # Twitter Quotes Bot
 
-Creates images with random quotes and posts them to twitter. Create a docker image and use Amazon AWS to automate 
+Creates images with random quotes and posts them to twitter.
 
 # Authentication
 Open bot.py and add the keys
